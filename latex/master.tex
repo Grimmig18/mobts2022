@@ -1,0 +1,77 @@
+\documentclass[
+	12pt,
+	BCOR=5mm,
+	DIV=12,
+	headinclude=on,
+	footinclude=off,
+	parskip=half,
+	bibliography=totoc,
+	listof=entryprefix,
+	toc=listof,
+	pointlessnumbers,
+    plainfootsepline]{scrreprt}
+    
+\input{config}
+
+\begin{document}
+
+
+\TitelDerArbeit{Planung und Organisation der MOBTS 2022 an der DHBW Mannheim}
+\AutorDerArbeit{Tizian Groß, Tristan Emig, Anton Ochel, Benno Grimm, Anna-Lena Richert, Marcel Mertens, Marleen Benner}
+\Firma{SAP SE \& Jobrouter}
+\Kurs{WWI 18 SE A}
+
+\input{titlepage.tex}
+
+\pagenumbering{roman} % Römische Seitennummerierung
+\normalfont
+
+\input{abstract.tex}
+
+% 	Inhaltsverzeichnis
+\tableofcontents
+
+%	Abbildungsverzeichnis
+\listoffigures
+
+%	Tabellenverzeichnis
+%\listoftables
+%	Listingsverzeichnis
+%  \lstlistoflistings
+
+% 	Algorithmenverzeichnis
+%\listofalgorithms
+
+\input{acronyms.tex}
+\ohead{Acronyms}
+
+\clearpage
+\ihead{\chaptername~\thechapter} % Neue Header-Definition (inner header)
+\ohead{\headmark} % Neue Header-Definition (outer header)
+\pagenumbering{arabic}  % Arabische Seitenzahlen
+
+
+
+% BEGIN OF ACTUAL CONTENT ------------------------
+\input{chapter-1/intro.tex}
+
+% END OF ACTUAL CONTENT --------------------------
+
+
+
+
+\printbibliography[title=Literaturverzeichnis]
+\cleardoublepage
+
+% Der Anhang beginnt hier - jedes Kapitel wird alphabetisch aufgezählt. (Anhang A, B usw.)
+\appendix
+\ihead{\appendixname~\thechapter} % Neue Header-Definition
+
+% appendix.tex einziehen
+\input{appendix.tex}
+
+% Ehrenwörtliche Erklärung ewerkl.tex einziehen
+\input{ewerkl.tex}
+
+
+\end{document}
