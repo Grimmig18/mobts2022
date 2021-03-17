@@ -347,3 +347,6 @@ fabric.properties
 .idea/
 *.idea/
 .idea/*
+latex/master.pdf
+latex/master.pdf
+master.pdf

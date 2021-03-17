@@ -1,0 +1,126 @@
+@online{M_BigBlueButton.o.J.,
+author = {BigBlueButton},
+year = {o. J.},
+title = {Engage Students Wherever They Are},
+url = {https://bigbluebutton.org/teachers/},
+urldate = {2021-02-27},
+abstract = {}
+}
+
+@online{M_BigBlueButton.o.J.b,
+author = {BigBlueButton},
+year = {o. J.},
+title = {Engage Your Online Students},
+url = {https://bigbluebutton.org/},
+urldate = {2021-02-27},
+abstract = {}
+}
+
+@online{M_Blackboard.o.J.,
+author = {Blackboard},
+year = {o. J.},
+title = {Blackboard Collaborate: Virtual Classroom Tool Designed for Education},
+url = {https://www.blackboard.com/teaching-learning/collaboration-web-conferencing/blackboard-collaborate},
+urldate = {2021-02-27},
+abstract = {}
+}
+
+@online{M_Maciej.2016,
+author = {Maciej, Martin},
+year = {2016},
+title = {Was ist Streaming? Erkl{\"a}rung f{\"u}r Dummies},
+url = {https://www.giga.de/extra/livestream/specials/was-ist-streaming-erklaerung-fuer-dummys/},
+urldate = {2021-02-26},
+abstract = {}
+}
+
+@online{M_Mierke.2020,
+author = {Mierke, Michael},
+year = {2020},
+title = {Videokonferenz-Tools im {\"U}berblick},
+url = {https://www.heise.de/tipps-tricks/Videokonferenz-Tools-im-Ueberblick-4688243.html},
+urldate = {2021-02-26},
+abstract = {},
+organization = {{Heise Online}}
+}
+
+@online{M_RedHat.o.J.,
+author = {{Red Hat}},
+year = {o. J.},
+title = {Was ist Open Source?},
+url = {https://www.redhat.com/de/topics/open-source/what-is-open-source},
+urldate = {2021-02-27},
+abstract = {}
+}
+
+@online{M_Sladek.2020,
+author = {Sladek, Antonia},
+year = {2020},
+title = {Online-Tagungen organisieren - Formate und Best Practices},
+url = {https://hochschulforumdigitalisierung.de/de/blog/online-tagungen-organisieren},
+urldate = {2021-02-26},
+abstract = {}
+}
+
+@online{M_Zoom.o.J.,
+author = {Zoom},
+year = {o. J.},
+title = {Download-Center},
+url = {https://zoom.us/download#client_4meeting},
+urldate = {2021-02-26},
+abstract = {}
+}
+
+@online{M_Zoom.o.J.b,
+author = {Zoom},
+year = {o. J.},
+title = {Zoom Besprechungen {\&} Chat},
+url = {https://zoom.us/de-de/meetings.html},
+urldate = {2021-02-26},
+abstract = {}
+}
+
+@online{M_Straub.o.J.,
+author = {Straub, Lea},
+year = {o. J.},
+title = {Videokonferenz-Systeme im Vergleich: Was k{\"o}nnen sie, was kosten sie?},
+url = {https://www.haus.de/smart-home/videokonferenz-systeme},
+urldate = {2020-03-01},
+abstract = {}
+}
+
+@online{M_Microsoft.o.J.,
+author = {Microsoft},
+year = {o. J.},
+title = {Businesstool f{\"u}r die nahtlose Kommunikation -- unabh{\"a}ngig von Ort und Zeit},
+url = {https://www.skype.com/de/business/},
+urldate = {2021-03-01},
+abstract = {}
+}
+
+@online{M_GrunderkucheRedaktion.2021,
+author = {{Gr{\"u}nderk{\"u}che Redaktion}},
+year = {2021},
+title = {Online-Seminar anbieten -- die besten Webkonferenz Tools in der Cloud | {\"U}bersicht 2021},
+url = {https://www.gruenderkueche.de/fachartikel/dein-online-seminar-und-webkonferenz-die-besten-webkonferenz-tools-uebersicht/},
+urldate = {2021-03-01},
+abstract = {}
+}
+
+@online{M_Klicksafe.o.J.,
+author = {Klicksafe},
+year = {o. J.},
+title = {Wie sicher ist Online-Unterricht mit BigBlueButton},
+url = {https://www.klicksafe.de/service/aktuelles/news/detail/wie-sicher-ist-online-unterricht-mit-bigbluebutton/},
+urldate = {2021-03-02},
+abstract = {}
+}
+
+@online{M_NorthernIllinoisUniversity.o.J.,
+author = {{Northern Illinois University}},
+year = {o. J.},
+title = {Participating in a Blackboard Collaborate Session},
+url = {https://www.niu.edu/blackboard/students/collaborate.shtml},
+urldate = {2021-03-02},
+abstract = {}
+}
