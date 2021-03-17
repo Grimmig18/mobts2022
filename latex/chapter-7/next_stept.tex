@@ -1,0 +1,133 @@
+\chapter{Next Steps und Zukunftsperspektiven}
+\section{Einführung}
+Im laufe der Geschichte sorgten viele Ereignisse, wie Kriege, Naturkatastrophen und andere Geschehnisse globalen Ausmaßes dafür, dass sich das Verhalten der Menschen nachhaltig änderte.
+Durch die Covid-19 Pandemie ist die Digitalisierung weltweit weiter in den Fokus gerückt als je zuvor.
+Akteure in Wirtschaft, Politik und Wissenschaft werden gezwungen eigene Digitalisierungsmaßnahmen stark zu beschleunigen.
+Digitalisierung ist nun nicht mehr nur der neue Trend des Jahrhunderts, sondern das notwendige Übel, ohne welches die Welt zum Stillstand kommt.
+
+Auch auf die Planung und Ausführung von Konferenzen lässt sich dieser Trend übertragen.
+Zwar ist davon auszugehen, dass bis zum Jahr 2022 pyhsische Veranstaltungen wenigstens im eingeschränkten Rahmen wieder möglich sind, so ist es auch zu erwarten, dass viele Menschen digitalen Zugang zu Veranstaltungen und deren Ressourcen fordern.
+Daher ist es zwingend notwending, dass als weitere Schritte der Konferenzplanung digitale Aspekte noch stärker berücksichtigt werden müssen.
+
+Weiterhin zeigt der Trend des letzten Jahrzenhts eine Entwicklung hin zur Nutzung mobiler Anwendung und einer immer stärkeren Marktpenetration mobiler Endgeräte.
+Allein in Deutschland besitzen 89\% aller Menschen ein Smartphone.
+Sogar in der Generation 65+ liegt der Anteil 2020 bei etwa 79\%.
+Von den Deutschen Smartphonenutzern verwenden beinahe 95\% ihr Gerät, etwa um Nachrichten zu verschicken, oder Social Media Kanäle zu pfelgen und zu verfolgen. \autocite[]{B_Gentner.2020}
+
+% Partnerschaften mit Hotels für Zimmer
+% Auswahl der Paper
+\section{App Konzept für die \ac{MOBTS} Konferenz}
+Aus den dargelgten Trend kann eine gewisse Notwendigkeit für mobile Anwendungen für Konferenzen hergeleitet werden.
+Da sich die Nutzung mobiler Anwendungen einer nie dagewesenen Beliebtheit erfreut, muss eine mobile Applikation (App) als vielversprechende Methode verstanden werden, mehr Aufmerksamkeit auf die \ac{MOBTS} Konferenzen zu lenken.
+Zum einen kann eine mobile App den Zugang zur Konferenz selbst vereinfachen, sie kann aber auch für eine bessere Erfahrung der Konferenzbesucher selbst sorgen, indem sie einfachen Zugang zu Ressourcen schafft.
+Im Folgenden sollen daher die Anforderungen an eine solche App analysiert und dargelegt werden und ein ersten Konzept erarbeitet werden.
+
+Dazu wird zunächst untersucht, wie die gegenwärtige Erfahrung eines Besuchers auf einer \ac{MOBTS} Konferenz aussieht und an welchen Stellen eine App Verbesserungen schaffen kann.
+Nach und nach soll hier aus eine zuerst relativ abstrakten Vision ein konkretes Konzept erarbeitet werden.
+
+\subsection{Problembeschreibung}
+Ein Besucher der \ac{MOBTS} Konferenz fordert ein Ticket an, welches zu, Besuch der Konferenz berechtigt.
+Besagten Ticket erreicht den Besucher nun vermutlich per Email oder postalisch.
+Wird das Ticket per Email verschickt, ist die Wahrscheinlichkeit hoch, dass es sogleich ausgedruckt wird.
+In jeden Fall ist das Resultat also ein Stück Papier, welches zum Besuch der Konferenz mitgenommen wird.
+Am Ort der Konferenz wird besagtes Stück Papier am Empfangstisch oder einer ähnlichen Einrichtung gegen eine Plakette oder einen Ausweis eingetauscht, welchen der Besucher während des gesamten Verlaufs der Konferenz mit sich herumträgt.
+
+Über den Ablauf der Konferenz hat sich der Besucher vermutlich bereits im Voraus informiert, allerdings ist es auch denkbar, dass am Konferenzort Ablauf- und Raumpläne konsultiert werden. 
+Gerade letztere werden zur Orientierung genutzt und sind entweder an versschiedenen Stellen im Konferenzgeäude zu finden oder als abgespeichertes PDF, Screenshot oder wieder in ausgedruckter Form selbst von den Besuchern mitgebracht.
+Nachteilig hierbei ist, dass die augehängten Pläne schwer zu finden sein können und die persönlichen eventuelle Planänderungen nicht enthalten.
+Die Informationsfindung kann sich also unter Umständen schwierig gestalten.
+
+Für das Besuchen der einzelnen Sessions und Vorträge sind auch einige Verhaltensmuster der Besucher festzustellen.
+So werden beispielsweise Vorlagen für die Aufzeichnung von Notitzen vom Veranstalter bereitgestellt, die von den Besuchern genutzt werden.
+Eine solche vereinfachte Vorlage wird in \autoref{fig:notes-template} dargestellt.
+Auch hier wird die Vorlage in den Tagen vor der Konferenz mehrfach ausgedruckt und in Papierform mitgenommen.
+
+\begin{figure}
+    \begin{center}
+        \includegraphics[width=0.9\textwidth]{img/notes_template.PNG}
+    
+    \end{center}
+    \caption{Vereinfache Notizen Vorlage}
+    \label{fig:notes-template}
+\end{figure}
+
+Da aufgrund der gegenwärtigen Situation ein Teil der Konferenz digital stattfinden wird ist davon auszugehen, dass Vortrage uns andere Session wenigstens zu einem gewissen Grad auch aufgezeichnet werden.
+Wie oder wo diese Aufzeichnungen zugänglich sein werden, ist allerdings unklar, womit auch das (digitale) Auffinden von Ressourcen nich klar organisiert zu sein scheint. 
+
+\subsection{Anforderungen}
+Aus der dargelegten Problembeschreibung soll zunächst eine high-level Vision für eine mögliche App abgeleitet werden.
+Als grundlegendes Problem kann hier eine fehlende Digitalisierung der Konferenzressourcen und eine fehlden zentralisiertung identifiziert werden.
+Wichtige Dokumente werden ausgedruckt verwendet und Informationen sind nicht einfach zentral an einem Ort abrufbar.
+Die Idee einer App stellt sich also in der Beantwortung der Frage \enquote{Wo finde ich X?} mit \enquote{In der \ac{MOBTS} App.} dar.
+Alle relevanten Informationen die vor, während und nach der Konferenz benötigt werden, sollen an einem einzigen Punkt einfach zugänglich gemacht werden.
+
+\subsubsection*{Vor der Konferenz}
+\textbf{Allgemeine Informationen} zu den \ac{MOBTS} Konferenzen, Neuigkeiten und sonstige Inhalte, die gegnwärtig auf der Website der \ac{MOBTS} \url{https://mobts.org/} angeboten werden, sollen in der App einsehbar sein.
+So sollen sich Interessenten und mögliche Besucher einfach einen Überblick verschaffen können.
+
+\textbf{Tickets} und Informationen zum Besuch der \ac{MOBTS} sollen auch in der App verfügbar sein.
+Denkbar hier ist, dass bei Erwerb eines Ticket ein Nutzeraccount in der App angelegt wird, über den der Besucher sein Ticket speichern kann und auf weitere Informationen zur Konferenz zugreifen kann.
+Die App kann das gespeichert Ticket bei Anmeldung am Konferenzort in Form eines QR-Codes oder durch \ac{NFC} nutzen, um den Besucher zu identifizieren und eine Badge auszustellen.
+So entfällt die Notwendigkeit ein Ticket ausdrucken und mitbringen zu müssen.
+Außerdem ist so gesichert, dass die Tickets zentral auf der Infrastruktur der MOBTS gesiepchert sind, wodurch in Problemfällen einfach gehandelt werden kann.
+Klappt die Anmeldung über die mobile App beispielsweise nicht, so ist es denkbar, dass sich der Besucher über einen Webbrowser anmeldet und dort Zugriff auf die selben Unterlagen wie in der App hat.
+Dank moderner Entwicklungstechnologien ist die Bereitstellung einer Website mit nur geringfügig größerem Aufwand als die einer App verbunden.
+
+\subsubsection*{Während der Konferenz}
+\textbf{Informationen} über den Verlauf und die Örtlichkeiten der einzelnen Veranstaltungen sollen in App zugänglich gemacht werden.
+Das soll verhindern, dass Besucher der Konferenz Informationen am Konferenzort suchen müssen, oder ihre eigenen Ausdrucke der Pläne mitbringen, welche eventuelle Änderungen nicht abbilden.
+Beide Fälle würden am Konferenztag für vermeidbare Probleme sorgen, die einfach umgangen werden können, wenn alle relevanten Informationen in einer App zugänglich sind.
+
+\textbf{Virtuelle Sessions} sollen idealerweise über die App oder eine Website zugänglich sein. 
+Da aber in \autoref{ch:conference-systems} bereits dargelegt wurde, dass vermutlich Konferenzsysteme dritter für die virtuelle Ausführung der Sessions verwendet werden, ist dies unter Umständen nicht möglich.
+Daher soll als Mindestanforderung über die App Zugang zu besagten System möglich sein, etwa durch das anklicken eines Buttons, eines Links oder des Auffindens von Anmelde- und Einwahlinformationen.
+
+\textbf{Notizen} und Vorlagen für das Aufschreiben von Notizen sollen ebenfalls über die App möglich und zugänglich sein.
+Vorteilhaft hier ist, dass einer App die einzelnen Sessions, deren Speaker und Uhrzeiten bereits bekannt sind, wodurch diese auf einem Template wie in \autoref{fig:notes-template} bereits ausgefüllt werden können.
+Hier muss allerdings auch bedacht werden, dass diese bereits vorausgefüllten Vorlagen als Download und somit zum Ausdrucken bereitstehen müssen, da das Schreiben von Notizen auf einem Smartphone für die meisten Besucher vermutlich nicht der bevorzugte Weg sein wird.
+Gleichzeitig soll hier aber auch auf die Vorteile einer eventuellen Website hingewiesen sein, die gleiches ermöglichen kann.
+Das Schrieben auf einem Laptop gestaltet sich als sehr viel angenehmer als auf einem Handy.
+Vorteil des digitalen Notizen Schreibens ist, dass Notizen mit einem Nutzeraccount assoiziiert werden können und in der App direkt neben Ressourcen zu den jeweiligen Sessions dargestellt sind.
+
+\textbf{Interaktion mit den Speakern} in virtuellen Sessions ist auf mehrere Wegen denkbar, entweder werden die Möglichkeiten der Konferenzsysteme, wie etwa Chats, genutzt, oder es werden eigene Interaktionsmöglichkeiten über die eigene App geschaffen, durch die beispielsweise Fragen gestellt und von anderen Besuchern Hochgewählt werden können.
+
+\subsubsection*{Nach der Konferenz}
+\textbf{Notizen und Ressourcen} zu den einzelnen Sessions sollen auch nach der Konferenz leicht in der App zugänglich sein.
+Dies soll Teilnehmenden ermöglich, nach Ende der Konferenz die Themen wieder aufzuarbeiteten.
+Allgemein sollen Ressourcen vergangener Konferenzen über den Nutzeraccount gespeichert werden, sodass bei erneutem Konferenzbesuch einfach auf alte Notizen zurückgegriffen werden kann.
+Die App funktioniert dabei als Single Point of Contact, über den auch mehrfache Besucher ihre Erlebnisse auf der \ac{MOBTS} Konferenz organisieren köknnen.
+
+\textbf{Umfragen} und ähnliche Feeback Möglichkeiten, sowie wege der Kontaktaufnahme mit den Organisierern, etwa über Kontaktfomulare sollen auch über die App zugänglich gemacht werden.
+So können Besucher der Konferenz auch nach Ende der Konferenz die App als zentralen Punkt der Interaktion mit Konferenzressourcen nutzen.
+ 
+\subsection{Architektur}
+\begin{figure}[h]
+    \begin{center}
+        \includegraphics[width=0.9\textwidth]{img/app_architecture.PNG}
+    \end{center}
+    \caption{Mögliche Architektur einer App für die MOBTS Konferenz}
+    \label{fig:architecture}
+\end{figure}
+
+\autoref{fig:architecture} zeigt eine Übersicht zu einer möglichen Architektur der App.
+Ein Client kommuniziert hier über eine \ac{REST} \ac{API} mit einem Server.
+Dabei kann der Client hier sowohl eine Website, als auch eine native Adnroid oder iOS App sein.
+Auf dem Server läuft in einem Container ein Proxy, der Anfragen an den Server an die zuständigen Komponenten deligiert.
+Der Komponent, der die meisten Anfragen verarbeiten wird, ist eine Node.js Laufzeit Umgebung, auf der ein NestJS Server läuft.
+Hier ist die Logik der App implementiert -- Anfragen werden verarbeitet, Daten geladen und gespeichert und Berechtigung überprüft.
+Um für Persistenz der Daten zu sorgen läuft in dem Container auch eine Datenbank, in Falle der dargestellten Architektur eine MariaDB, mit der die Node.js Laufzeitumgebung kommuniziert, um Daten zu laden und zu speichern.
+
+\subsection{Technologien}
+\subsubsection*{Flutter}
+
+\subsubsection*{\ac{REST} \ac{API}}
+
+\subsubsection*{Docker}
+
+\subsubsection*{Node.js}
+
+\subsubsection*{NestJS}
+
+\subsubsection*{MariaDB}
+
+\section{Social Media Marketing}
