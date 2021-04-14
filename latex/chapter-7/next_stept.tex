@@ -119,15 +119,87 @@ Um für Persistenz der Daten zu sorgen läuft in dem Container auch eine Datenba
 
 \subsection{Technologien}
 \subsubsection*{Flutter}
+Flutter ist eine von Goolge entwickelte Technologie, die als Werkzeug zur Entwicklung nativer Android und iOS Anwendungen verwendete werden kann.
+Dabei müssen Entwickler lediglich einen Code entwickeln, welcher dann von Flutter zu jeweils nativen Android und iOS Applikationen kompiliert wird.
+Weiterhin bietet die neuste Version, Flutter 2, erweiterte Möglichkeiten bezüglich der Webeinbindung.
+Entwickelte Apps können so einfach auch als Webanwendung bereitgestellt werden.
+Damit werden auch nutzer angesprochen, die sich nur für die Konferenz keine App herunterladen wollen. \autocite{B_GoogleDevelopers.} 
 
 \subsubsection*{\ac{REST} \ac{API}}
+Eine \ac{API} bezeichnet eine Schnittstelle zwischen Programmen. 
+Im Falle der App Entwicklung wir hier primär die Schnittstelle zwischen Back- und Frontend genauerer Betrachtung erfordern.
+Grundlegend ist das Backend (der Server) dafür veranwortlich die Logik einer Anwndung, sowie die Datenverarbeitung bereitszustellen.
+Diese beinhalten beispielsweise das Anlegen von Nutzerkonten, Authorisierungskonzepte, beispielsweise über Sessions, und Speichern von Daten.
+Das Frontend (die App) ist die Schnittstelle zum Endnutzer, über die mit der Anwendung kommuniziert und interagiert wird.
+Dabei ist es Aufgabe der App, Informationen des Servers dem Nutzer anzuzeigen und Eingaben des Nutzers an den Server zu senden. 
+Dies geschiet wiederum über die \ac{API}.
+
+\ac{REST} bezeichnet das Architekturprinzip einer API.
+Zwar gibt es hier grundlegend keine standardisierte Methoden oder Prinzipien, es können aber einige Kritierien dargelegt werden.
+Grundsätzlich setzt eine \ac{REST} \ac{API} eine zustandslose Client/Server-Kommunkation um, was bedeutet, dass es keine gegebene Verbindung zwischen einzelnen Anfragen gibt, wodurch jede Anfrage beispielsweise neu Authentifiziert und Authorisiert werden muss\autocite{B_RedHat.}.
+
+\begin{figure}[h]
+    \begin{center}
+        \includegraphics[width=0.9\textwidth]{img/rest_api.PNG}
+    \end{center}
+    \caption{Grundlegendes Konzept einer REST API}
+    \label{fig:rest-api}
+\end{figure}
+
+\autoref{fig:rest-api} zeigt vereinfacht das Schema einer \ac{REST} \ac{API}, in der mehrere Clients andfragen an einen Server schicken, welche jeweils mit einer Antwort des Servers beantwortet werden.
 
 \subsubsection*{Docker}
+Docker bezeichnet eine beliebte Softwarelösung zur Containerization von Anwendungen.
+Containerization bezeichnet dabei das Prinzip Teile einer Anwndung oder eine gesamte Anwendung mit allen Abhängigkeiten, wie externen Code-Bibliotheken ein einem Paket einzukapseln.
+Ein häufig auftretendes Problem der Software Entwicklung ist, dass Software zwar auf einem System läuft, auf einem anderen aber nicht.
+Das ist in sofern problematisch, da Anwender und Unternehmen darauf vertrauen müssen, dass Anwendungen auf allen Systemen gleich laufen.
+Um dieses Problem zu lösen, muss entweder ein hoher Aufwand in die Konfiguration von Systemen gesteckt werden, oder das Vertrauen von Anwendern und Unternehmen muss betrogen werden.
+
+Containerization löst dies, indem es das Problem nicht auftreten lässt.
+Durch einbindung aller Abhängigkeiten läuft eine Anwendung auf allen Systemen gleich und es bedarf nur eines geringen Konfigurationsaufwands \autocite{B_IBMCloudEducation.2019}.
+
+Docker stellt dabei eine beliebte Lösung der Containerization dar.
+Nach einer Umfrage von IBM verwenden bis zu 60\% der Befragten Docker als eine Deployment Platform. \autocite{B_IBMCloud.}
+Vorteilhaft an der Verwendung von Mainstream Technologien ist die Existenz eine großen Community und weitereichender Ressourcen zum Anlernen der Technologie.
+Auftretende Probleme können auch aufgrund einer größeren Community schnell gelöst werden. 
 
 \subsubsection*{Node.js}
+Node.js ist nach eigener Angabe eine asynchrone ereignisgesteuerte JavaScript Laufzeitumgebung. \autocite{Node.js.}
+Das bedeutet, dass so wie in einem Webbrowser, in Node.js JavaScript Code ausgeführt werden kann.
+Dabei ist Node.js besonders für das entwickeln von Servern ausgelegt.
+Vorteilhaft gegenüber anderer Sprachen ist bei der Entwicklung von JavaScript Servern mit Node.js vor allem die große Community, die sich um Node.js gebildet hat.
+Große Communities sind dann immer hilfreich, wenn Probleme auftreten, da entweder Ressourcen im Überfluss zur Verfügung stehen, oder Fragen in Foren schnell von aktiven Vertretern der Community beantwortet werden.
+Laut der jährlichen Entwicklerumfrage des Portals Stackoverflow\footnotetext{\url{https://stackoverflow.com/}} verwenden bis zu 50\% aller Befragten Node.js in ihren Projekten -- sowohl privat als auch beruflich \autocite{B_Stackoverflow.2020}.
+
+Weiterhin existieren für Node.js zahlreiche exteren Code Bibliotheken, die den Entwicklungsprozess signifikant beschleunigen.
+Ebenso gibt es eine große Anzahl an Frameworks, die die Serverentwicklung zu einem gewissen Grad abstrahieren und somit wiederum den Entwicklungsprozess vereinfachen können.
+Insbesondere die Auswahl eines passenden Frameworks entscheidet bei der Arbeit mit Node.js über die tatsächliche Umsetzung einer App.
 
 \subsubsection*{NestJS}
+NestJS ist ein Node.js basiertes Framework \autocite{B_NestJs.}.
+Es ist auf eine Trennung von logisch unabhängigen Programmkomponenten ausgelegt.
+Durch diese Entzerrung bleibt eine Anwendung, auch dann wenn sie umfangreicher wird, immernoch übersichtlich.
+Grundlegend unterteilt NestJS einen jeweiligen Teil der Geschäftslogik in folgende Komponenten ein:
+\begin{itemize}
+    \item \textbf{Controller} sind für das Request/Response Handling verantwortlich, also die Kommunikation mit den Clients
+    \item \textbf{Provider} (Services) sind für die tatsächliche Geschäftslogik veranwortlich. Hier werden die Anfragen der Client verarbeitet und Anworten mit entsprechenden Daten gefüllt.
+    \item \textbf{Modules} bieten schließlich die Schnittstelle ziwschen den Komponenten einer NestJS Anwendung.
+\end{itemize}
+Neben einer übersichtlichen Designphilosophie bietet NestJS weiterhin einen nativ die Unterstützung der Programmiersprache TypeScript.
+TypeScript ist eine Erweiterung der beliebtesten Srache zur Webentwicklung JavaScript, welche ebenso beliebt wie auch gefürchtet ist \autocite{B_Stackoverflow.2020}.
+Gegenüber JavaScript bietet TypeScript den Vorteil, dass eine statische Typisierung von Valriablen das Entwickeln einfacher macht, da semantische Fehler im Code schneller gefunden und behoben werden können.
+Da TypeScript auf JavaScript basiert, ist auch die Lernprozess für Programmierer, die noch nicht mit der Sprache vertraut sind, sehr linear und einfach.
+Der Syntax beider Sprachen ist der gleiche, wodurch bereits in JavaScript Gelerntes direkt angewendet werden kann.
 
-\subsubsection*{MariaDB}
+\subsubsection*{Datenbank}
+Für die praktische Umsetzung einer App für die MOBTS 2022 gilt es in irgendeiner Form Daten zu speichern.
+In der Informatik ist die dafür etablierte Lösung in fast jedem Falle eine Datenbank.
+Für die meisten Anwendungsfälle etablierte sich in den letzten Jahrzehnten die relationale Datenbank als Standard.
+In einer relationalen Datenbank werden Daten nach einem vorher festgelegtem Schema gespeichert \autocite{B_AWS.o.J.}.
+Dieses Schema wird im Vorlauf in Form eines ER-Diagramms (Entity Relationship) dargestellt.
+Die genaue Struktur eines solchen Diagramms kann erst dann erstellt werden, wenn die praktische Implementierung der App genauer durchdacht wird.
+Da diese aber in jedem Fall nicht so weit vom \enquote{normalen} Anwendungsfall abweichen wird, sollte eine relationale Datenbank die richtige Wahl sein.
+An dieser Stelle sei daher eine relationale, SQL-basierte Datenbank empfohlen, ohne, dass genauer auf deren Strukturierung eingegangen werden soll.
+Für die Wahl eines konkreten Datenbankmanagementsystems sei an dieser Stelle MariaDB oder PostgreSQL empfohlen -- beides sind populäre Lösungen, die aus vorher bereits genannten Gründen den Entwicklungsprozess vereinfachen können.
 
-\section{Social Media Marketing}
+\section{Fazit}
